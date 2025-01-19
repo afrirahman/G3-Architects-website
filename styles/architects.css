@@ -28,7 +28,7 @@ header{
 .dark-2{
   color: rgb(66, 66, 66);
 }
-.navbar , .banner, .main {
+.navbar , .banner, .main , footer {
   max-width: 90rem;
   margin: 0 auto;
 }
@@ -120,8 +120,87 @@ height: 106px;
       height: 78px;
       width: 480px;
    }
+   .section-2{
+    display: flex;
+    gap: 146px;
+    margin-top: 85px;
+
+   }
+   .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+   .none{
+    border: .5px solid rgb(255, 144, 14);
+    background-color:rgb(255, 144, 14);
+    width: 5px;
+    height: 100px;
+    
+   }
+   .section2-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    max-width: 29.25rem;
+    margin: 24px 0;
+   }
+   .section2-description{
+      font-size: 1rem;
+      font-weight: 400;
+      max-width: 580px;
+   }
+   .container-content{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 580px;
+    
+   }
+   .container-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+   }
+   .container-description{
+      font-size: 1rem;
+      font-weight: 400;
+   }
+   .section2-img{
+    height: 61rem;
+    width: 44.25rem;
+    
+   }
+   .p-1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+   }
+   .p-2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+   }
+   .section2-button{
+    width: 21rem;
+    height: 12.5rem;
+    border: none;
+    background-color:rgb(255, 144, 14) ;
+    border-radius: 8px;
+    position: relative;
+     right: 92px;
+    bottom: 125px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    
+    
+   }
+
+
    .section-3{
     margin-top: 85px;
+    
    }
    .section3-title{
     font-size: 2.8rem;
@@ -137,6 +216,8 @@ height: 106px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 40px;
+    justify-items: center;
+    
    
    }
    .cart{
@@ -160,6 +241,44 @@ height: 106px;
     font-weight: 600;
     margin-top: 10px;
    }
+   .section-4{
+    margin-top: 100px;
+   }
+   .section4-content{
+    max-width: 33.8rem;
+    margin: 50px auto;
+    text-align: center;
+   }
+   .section4-title{
+      font-size: 2.8rem;
+      font-weight: 700;
+   }
+   .section4-description{
+    font-size: 1rem;
+    font-weight: 400;
+   }
+   .section-icons{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    filter: grayscale(100%);
+   }
+   .icon{
+    border: 2px dashed rgb(190, 187, 187)  ;
+    margin: 50px 0;
+   }
+   footer{
+    background-color: rgb(255, 244, 231);
+    border-radius: 8px;
+    height:100px;
+    margin-bottom: 20px;
+    margin-top: 85px;
+   }
+   .footer-title{
+    font-size: 1.25rem;
+    font-weight: 400;
+   padding: 40px 0;
+   }
 
  /* Media query */
  /* mobile size */
@@ -167,7 +286,7 @@ height: 106px;
   .navbar , .nav-links{
     flex-direction: column;
   }
-  .section-1{
+ .section-2 , .section-3, .section-4 , .section-1{
     flex-direction: column;
   }
   .section-img{
@@ -176,6 +295,24 @@ height: 106px;
   .section1-content{
     max-width: 125%;
 }
+
+ .section2-img{
+    max-width: 480px;
+    max-height: 700px;
+  } 
+  .section2-button{
+    position: relative;
+    left: 80px;
+    top:30px;
+  }
+
+ .section-icons , .cart-container{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+  }
+    footer{
+      margin: 0 10px 5px 0;
+    }
  }
 /* medium size */
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -185,7 +322,27 @@ height: 106px;
   .section-img{
     grid-template-columns: repeat(2,1fr);
   }
-  .section1-content{
-    
+  
+ .section-2 ,.section-4 , .section-3{
+    flex-direction: column;
+    padding: 0 50px;
+  }
+   .section2-item{ 
+    justify-items: center;
+  } 
+  .section2-img{
+    padding:0 10px ;
+  }
+  .section2-button{
+    position: relative;
+    left: 15px;
+    top:30px;
+  }
+   .section-icons , .cart-container{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+  }
+  footer{
+    margin: 0 10px;
   }
 }
