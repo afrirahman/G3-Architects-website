@@ -302,7 +302,7 @@ height: 106px;
   } 
   .section2-button{
     position: relative;
-    left: 100px;
+    left: 5px;
     top:30px;
     height: 8rem;
     width: 15rem;
@@ -312,6 +312,9 @@ height: 106px;
   }
   .p-2{
     font-size: 1rem;
+  }
+  .section2-item{
+    justify-items: center;
   }
 
  .section-icons , .cart-container{
